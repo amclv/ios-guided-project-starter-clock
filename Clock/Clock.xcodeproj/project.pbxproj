@@ -37,6 +37,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A0DF26323D8B91500C64EB6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CE51157222C139FE00EA4354 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1A12B4E923D8B8AC00954AA8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CE51156E22C139FE00EA4354 /* AppDelegate.swift */,
+				CE51157522C139FE00EA4354 /* Assets.xcassets */,
+				CE51157722C139FE00EA4354 /* LaunchScreen.storyboard */,
+				CE51157A22C139FE00EA4354 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1A12B4EA23D8B8B300954AA8 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1A12B4EC23D8B8DC00954AA8 /* Model Controllers */,
+				1A12B4EB23D8B8BB00954AA8 /* View Controllers */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		1A12B4EB23D8B8BB00954AA8 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CE51157022C139FE00EA4354 /* ClockViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		1A12B4EC23D8B8DC00954AA8 /* Model Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CE51158022C13A8100EA4354 /* ClockView.swift */,
+			);
+			path = "Model Controllers";
+			sourceTree = "<group>";
+		};
 		CE51156222C139FE00EA4354 = {
 			isa = PBXGroup;
 			children = (
@@ -56,13 +100,9 @@
 		CE51156D22C139FE00EA4354 /* Clock */ = {
 			isa = PBXGroup;
 			children = (
-				CE51156E22C139FE00EA4354 /* AppDelegate.swift */,
-				CE51157022C139FE00EA4354 /* ClockViewController.swift */,
-				CE51158022C13A8100EA4354 /* ClockView.swift */,
-				CE51157222C139FE00EA4354 /* Main.storyboard */,
-				CE51157522C139FE00EA4354 /* Assets.xcassets */,
-				CE51157722C139FE00EA4354 /* LaunchScreen.storyboard */,
-				CE51157A22C139FE00EA4354 /* Info.plist */,
+				1A12B4E923D8B8AC00954AA8 /* Resources */,
+				1A12B4EA23D8B8B300954AA8 /* Controllers */,
+				1A0DF26323D8B91500C64EB6 /* Views */,
 			);
 			path = Clock;
 			sourceTree = "<group>";
@@ -287,12 +327,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Clock/Info.plist;
+				DEVELOPMENT_TEAM = 6SYENEWMJ7;
+				INFOPLIST_FILE = "$(SRCROOT)/Clock/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.lambdaschool.Clock;
+				PRODUCT_BUNDLE_IDENTIFIER = com.AaronClevelnad.Clock;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -304,12 +345,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Clock/Info.plist;
+				DEVELOPMENT_TEAM = 6SYENEWMJ7;
+				INFOPLIST_FILE = "$(SRCROOT)/Clock/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.lambdaschool.Clock;
+				PRODUCT_BUNDLE_IDENTIFIER = com.AaronClevelnad.Clock;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
